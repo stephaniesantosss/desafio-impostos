@@ -12,3 +12,32 @@ spring:
         format_sql: true
   h2:
     console.enabled: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+app:
+  tarifas:
+    vida:
+      iof: ${IOF_VIDA}
+      pis: ${PIS_VIDA}
+      cofins: ${COFINS_VIDA}
+
+    auto:
+      iof: ${IOF_AUTO}
+      pis: ${PIS_AUTO}
+      cofins: ${COFINS_AUTO}
+
+    viagem:
+      iof: ${IOF_VIAGEM}
+      pis: ${PIS_VIAGEM}
+      cofins: ${COFINS_VIAGEM}
+
+    residencial:
+      iof: ${IOF_RESIDENCIAL}
+      pis: ${PIS_RESIDENCIAL}
+      cofins: ${COFINS_RESIDENCIAL}
+
+    patrimonial:
+      iof: ${IOF_PATRIMONIAL}
+      pis: ${PIS_PATRIMONIAL}
+      cofins: ${COFINS_PATRIMONIAL}
