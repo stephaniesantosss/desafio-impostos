@@ -5,9 +5,11 @@ import jakarta.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.util.UUID;
 
+@ToString
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor

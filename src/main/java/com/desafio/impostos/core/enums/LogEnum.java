@@ -10,7 +10,7 @@ public enum LogEnum {
     LOG_COTACAO_USE_CASE_FIM("CotacaoUseCaseImpl002 Fim cotacao produto "),
     LOG_COTACAO_USE_CASE_INICIO_COTACAO_EXISTENTE("CotacaoUseCaseImpl003 Inicio verificacao cotacao existente "),
     LOG_COTACAO_USE_CASE_COTACAO_NAO_EXISTENTE("CotacaoUseCaseImpl004 Cotacao nao existente, criando uma nova "),
-    LOG_COTACAO_USE_CASE_FIM_COTACAO_EXISTENTE("CotacaoUseCaseImpl005 Fim verificacao cotacao existente "),
+    LOG_COTACAO_USE_CASE_FIM_COTACAO_EXISTENTE("CotacaoUseCaseImpl005 Fim verificacao cotacao existente, atualizando base "),
     LOG_CALCULO_TARIFA_AUTO_INCIO("CalculoTarifaAuto001 Inicio calculo tarifa AUTO preco base: "),
     LOG_CALCULO_TARIFA_AUTO_FIM("CalculoTarifaAuto002 Fim calculo tarifa AUTO preco tarifado: "),
     LOG_CALCULO_TARIFA_VIDA_INCIO("CalculoTarifaVida001 Inicio calculo tarifa VIDA preco base: "),
