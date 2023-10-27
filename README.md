@@ -53,4 +53,12 @@ curl --request POST \
 	"categoria": "AUTO",
 	"preco_base": 55.00
 }'
+```
+
+#### Acessar tabela h2 console
+
+```
+http://localhost:8080/h2-console/
+```
+![img_3.png](img_3.png)
 
