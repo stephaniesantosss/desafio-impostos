@@ -62,3 +62,21 @@ http://localhost:8080/h2-console/
 ```
 ![img_3.png](img_3.png)
 
+## Detalhes técnicos da solução
+
+Esta aplicação tem como premissa o cálculo de tarifas de seguro com base no preço base e na categoria. O desafio consistiu em criar uma API REST que executasse essa premissa mencionada anteriormente.
+
+Na implementação, decidi utilizar apenas um endpoint POST que realiza a cotação do seguro. Caso a categoria já exista, o código irá realizar a atualização dos dados com base no valor informado e na tarifa calculada.
+
+Como a aplicação gera a tarifa conforme a categoria, optei por utilizar o design pattern Strategy Factory. Com esse design, consigo adicionar uma implementação para cada produto, evitando o uso de diversos "ifs" e "elses" para tomada de decisão. Além disso, respeito o princípio do SOLID, especificamente o Princípio da Responsabilidade Única, que deixa a responsabilidade de cálculo para cada classe de serviço, de acordo com sua categoria, e o Princípio de Aberto/Fechado, que permite a extensão sem a necessidade de alteração. A funcionalidade basicamente verifica a categoria e chama a implementação correta.
+
+Decidi utilizar a abstração de camadas e interfaces para abstrair as regras de negócios e designar responsabilidades para classes específicas, utilizando alguns dos pilares do SOLID, como o Princípio da Responsabilidade Única, Princípio da Segregação de Interfaces e Princípio da Inversão de Dependência. Isso tornou o código mais coeso, limpo e organizado.
+
+Resolvi criar variáveis de ambiente para evitar valores fixos no código, caso os valores das taxas mudem. Isso facilita a alteração dos valores, sendo necessário apenas a troca das variáveis de ambiente, em vez de realizar um novo deploy da aplicação para fazer ajustes.
+
+Optei por usar a arquitetura Clean Architecture, pois aprecio seu objetivo de separar a aplicação por camadas e módulos. Isso permite desacoplar o núcleo, a aplicação e o banco de dados/infraestrutura, tornando mais fácil a substituição do banco ou de alguma tecnologia, se necessário.
+
+Utilizei o H2 e criei um arquivo para popular o banco de dados durante a execução da aplicação. Também incluí logs ao longo da execução para rastrear as solicitações com maior facilidade. Caso ocorra algum erro, isso facilita a localização e a resolução do problema, além de ajudar na criação de painéis de acompanhamento.
+
+Quanto aos testes, foram realizados testes unitários com JUnit e testes de integração para testar a execução de ponta a ponta com o banco de dados. Optei por criar uma tabela de testes para não poluir a tabela da aplicação principal.
+
