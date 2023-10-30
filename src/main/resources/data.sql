@@ -1,3 +1,3 @@
-INSERT INTO SEGURO(id, nome, categoria, preco_base, preco_tarifado) VALUES ('62e4846a-3c68-482e-8493-84a21f992cce', 'Seguro de Vida Individual', 'VIDA', 55.00, 60.775)
-INSERT INTO SEGURO(id, nome, categoria, preco_base, preco_tarifado) VALUES ('82e4846a-3c68-482e-8493-84a21f992ccf', 'Seguro Auto Individual', 'AUTO', 55.00, 60.775)
-INSERT INTO SEGURO(id, nome, categoria, preco_base, preco_tarifado) VALUES ('52e4846a-3c68-482e-8493-84a21f992cce', 'Seguro Residencial Individual', 'RESIDENCIAL', 55.00, 60.775)
+INSERT INTO SEGURO(id, nome, categoria, preco_base, preco_tarifado) VALUES ('62e4846a-3c68-482e-8493-84a21f992cce', 'Seguro Individual Vida', 'VIDA', 55.00, 60.775)
+INSERT INTO SEGURO(id, nome, categoria, preco_base, preco_tarifado) VALUES ('82e4846a-3c68-482e-8493-84a21f992ccf', 'Seguro Individual Auto', 'AUTO', 55.00, 60.775)
+INSERT INTO SEGURO(id, nome, categoria, preco_base, preco_tarifado) VALUES ('52e4846a-3c68-482e-8493-84a21f992cce', 'Seguro Individual Residencial', 'RESIDENCIAL', 55.00, 60.775)
