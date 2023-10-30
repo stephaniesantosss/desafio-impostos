@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @ActiveProfiles("test")
 @SpringBootTest
-class CotacaoControllerIntegrationTest {
+class ImpostosApplicationTest {
 
     @Autowired
     private CotacaoController controller;
