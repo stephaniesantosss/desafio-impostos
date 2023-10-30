@@ -1,0 +1,44 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:impostos-test
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
+  h2:
+    console.enabled: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+app:
+  tarifas:
+    vida:
+      iof: 0.01
+      pis: 0.02
+      cofins: 0.03
+
+    auto:
+      iof: 0.055
+      pis: 0.04
+      cofins: 0.01
+
+    viagem:
+      iof: 0.02
+      pis: 0.04
+      cofins: 0.01
+
+    residencial:
+      iof: 0.04
+      pis: 0.025
+      cofins: 0.03
+
+    patrimonial:
+      iof: 0.05
+      pis: 0.03
+      cofins: 0.02
